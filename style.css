@@ -79,7 +79,7 @@
 }
 .mainnn
 {
-    
+    background-color: transparent;
         height: 1162px;
     width: 80vw;
     /* margin: 1px; */
@@ -88,6 +88,7 @@
     grid-template-columns: 32% 32% 32%;
     grid-template-rows: 20% 40% 40%;
     gap: 15px;
+    z-index: -1;
     
     
     
@@ -106,18 +107,50 @@
 }
 #one
 {
+    margin-top: 150px;
     grid-column: 1/4;
-    background-color: rgb(235, 209, 209);
+    /* background-color: rgb(235, 209, 209); */
     padding: 5px;
     
 
 }
+#two:hover{
+    /* background-color: transparent; */
+    opacity: 0.5;
+
+}
+#three:hover{
+    /* background-color: transparent; */
+    opacity: 0.5;
+
+}
+#four:hover{
+    /* background-color: transparent; */
+    opacity: 0.5;
+
+}
+#five:hover{
+    /* background-color: transparent; */
+    opacity: 0.5;
+
+}#six:hover{
+    /* background-color: transparent; */
+    opacity: 0.5;
+
+}
+#seven:hover{
+    /* background-color: transparent; */
+    opacity: 0.5;
+
+}
+
 #two
 {
     grid-column: 1/2;
     background-image: url(./img1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(./nature1.jpg) ;
 }
 #three
 {
@@ -125,6 +158,7 @@
     background-image: url(./img2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(./nature1.jpg) ;
 
 }
 #four
@@ -133,6 +167,7 @@
     background-image: url(./img3.jfif);
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(./nature1.jpg) ;
 }
 #five
 {
@@ -140,6 +175,7 @@
     background-image: url(./img4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(./nature1.jpg) ;
     
 }
 #six
@@ -148,6 +184,7 @@
     background-image: url(./img5.jfif);
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(./nature1.jpg) ;
 }
 #seven
 {
@@ -155,38 +192,13 @@
     background-image: url(./img6.jfif);
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(./nature1.jpg) ;
 }
 #p1
 {
     font-family: Arial, Helvetica, sans-serif;
     
 }
-/* Footer SEction */
-/* #contact{
-    position : relative;
-
-}
-#contact::before{
-content : "";
-position: absolute;
-width: 100%;
-height: 100%;
-z-index : -1;
-opacity: 0.7;
-background: url('../Project/concept-contact-us-blank-wooden-cubes-square-dice-with-symbol-email-telephone-address-placed-wood-background_44868-1254.jpg') no-repeat center center/cover;
-}
-#contact-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 34px;
-}
-#contact-box input , #contact-box textarea{
-    width : 100%;
-    padding : 0.5rem;
-    border-radius: 9px;
-    font-size: 1.1rem;
-/* } */
  footer{
     background-color: black;
     color : white;
@@ -230,11 +242,90 @@ background: url('../Project/concept-contact-us-blank-wooden-cubes-square-dice-wi
 
 #last{
     display: flex;
+    justify-content: space-around;
     height : 250px;
     background-color: black;
 }
 .last1{
     border : 2px solid red;
-    height : 100px;
-    width : 100px;
+    height: 234px;
+    width: 254px;
+    justify-content: center;
+}
+.ban-1
+{
+   
+    color: white;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+   background-color: black;
+    justify-content: center;
+}
+.ban-1 .one
+{
+    /* justify-content: center; */
+    align-items: center;
+    line-height: 40px;
+   
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+   
+}
+.ban-1 .one .foot
+{
+    display: flex;
+    flex-direction: row;
+}
+.ban-1 .one .foot .ic
+{
+    border: 1px solid #29d9d5;
+    border-radius: 35%;
+    padding: 11px;
+    margin: 4px;
+    transition: 1s;
+    padding-top: 23px;
+}
+.ban-1 .one .foot .ic:hover
+{
+    background-color: #29d9d5;
+}
+.bi
+{
+    width: 50px;
+    height: 50px;
+    color: #29d9d5;
+    
+    background: black;
+    /* padding:20px; */
+  
+}
+.bi:hover
+{
+    background:transparent;
+    color: black;
+}
+input
+{
+    width:300px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 10px;
+    font-size: 20px;
+    margin-left: 30px;
+    border: 1px solid #29d9d5;
+    padding-left: 20px;
+    background-color: transparent;
+    color: gray;
+    
+}
+.bi-facebook
+{
+    color: #29d9d5;
+    background-color: black;
 }
